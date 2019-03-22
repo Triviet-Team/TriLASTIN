@@ -51,7 +51,8 @@ $main_color: #FEC54B;
     width: calc(100% - 40px);
     left: initial;
     top: initial;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
     margin: 20px;
   }
 }
@@ -87,8 +88,10 @@ $main_color: #FEC54B;
         background: black;
         position: absolute;
         width: 300px;
-        transform: translate(-300px, 0);
+        -webkit-transform: translate(-300px, 0);
+                transform: translate(-300px, 0);
         margin-top: -2px;
+        -webkit-transition: .3s;
         transition: .3s;
         height: 100vh;
         opacity: 0;
@@ -100,7 +103,8 @@ $main_color: #FEC54B;
         margin: 0;
 
         &.out {
-          transform: translate(0, 0);
+          -webkit-transform: translate(0, 0);
+                  transform: translate(0, 0);
           opacity: 1;
           z-index: 1000;
         }

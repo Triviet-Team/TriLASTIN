@@ -64,6 +64,7 @@ $main_color: #FEC54B;
   }
 
   a {
+    -webkit-transition: .3s;
     transition: .3s;
 
     &:hover {
@@ -75,7 +76,8 @@ $main_color: #FEC54B;
 
 .menu {
   background: white;
-  box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .16);
+  -webkit-box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .16);
+          box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .16);
   position: relative;
   height: 100px;
   border-bottom: 1px solid #e1e1e1;
@@ -119,6 +121,7 @@ $main_color: #FEC54B;
       color: black;
       margin: 10px 0;
       z-index: 10000;
+      -webkit-transition: 500ms;
       transition: 500ms;
 
       i {
@@ -132,13 +135,16 @@ $main_color: #FEC54B;
       margin: 35px 0;
 
       li {
+        -webkit-transition: .5s;
         transition: .5s;
         display: inline-block;
         padding: 0 20px;
 
         &:hover {
           .menu-down {
-            transform: none;
+            -webkit-transform: none;
+                    transform: none;
+            -webkit-transition: .3s;
             transition: .3s;
           }
         }
@@ -150,6 +156,7 @@ $main_color: #FEC54B;
         a {
           font-weight: 600;
           font-size: 15px;
+          -webkit-transition: .3s;
           transition: .3s;
           color: black;
           padding: 0;
@@ -170,6 +177,7 @@ $main_color: #FEC54B;
 
     a {
       font-size: 24px;
+      -webkit-transition: .3s;
       transition: .3s;
 
       &:hover {
@@ -183,6 +191,7 @@ $main_color: #FEC54B;
       span {
         color: $main_color;
         font-size: 12px;
+        -webkit-transition: .3s;
         transition: .3s;  
       }
     }    
@@ -227,8 +236,10 @@ $main_color: #FEC54B;
     button.owl-next {
       position: absolute;
       top: 47%;
-      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
       font-size: 20px;
+      -webkit-transition: .3s;
       transition: .3s;
       color: black;
       width: 40px;
@@ -316,6 +327,8 @@ $main_color: #FEC54B;
 }
 
 .why {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: $main_color;
   margin-bottom: 50px;
@@ -350,7 +363,8 @@ $main_color: #FEC54B;
 
     li {
       position: relative;
-      box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .16);
+      -webkit-box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .16);
+              box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .16);
       overflow: hidden;
 
       .box-result {
@@ -363,7 +377,8 @@ $main_color: #FEC54B;
           width: calc(100% - 60px);
           left: 50%;
           top: 50%;
-          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
           cursor: default;
           z-index: 1;
 
@@ -407,10 +422,12 @@ $main_color: #FEC54B;
       overflow: hidden;
 
       &:hover img {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
       }
 
       img {
+        -webkit-transition: 1s;
         transition: 1s;
       }
     }
@@ -430,7 +447,8 @@ $main_color: #FEC54B;
           width: 40px;
           height: 2px;
           top: 50%;
-          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
           left: 0;
           position: absolute;
           background: #994E9B;
@@ -445,6 +463,7 @@ $main_color: #FEC54B;
           text-transform: uppercase;
           font-weight: bold;
           line-height: 1.2;
+          -webkit-transition: .3s;
           transition: .3s;
 
           &:hover {
@@ -464,6 +483,7 @@ $main_color: #FEC54B;
           text-transform: uppercase;
           color: white;
           font-size: 14px;
+          -webkit-transition: .3s;
           transition: .3s;
 
           &:hover {
@@ -483,6 +503,7 @@ $main_color: #FEC54B;
   i {
     font-size: 24px;
     margin-left: 20px;
+    -webkit-transition: .3s;
     transition: .3s;
 
     &:hover {
@@ -500,7 +521,8 @@ $main_color: #FEC54B;
     border-radius: 40px;
 
     &:focus {
-      box-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
       outline: none;
       border-color: $main_color;
     }
@@ -519,6 +541,7 @@ $main_color: #FEC54B;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
+    -webkit-transition: .3s;
     transition: .3s;
     border: 2px solid $main_color;
 
@@ -568,6 +591,7 @@ $main_color: #FEC54B;
 
         a {
           @include o1;
+          -webkit-transition: .3s;
           transition: .3s;
 
           &:hover {
@@ -607,7 +631,8 @@ $main_color: #FEC54B;
   
             .xactive {
               border-color: $main-color;
-              box-shadow: 0px 0px 3px 0px $main-color;
+              -webkit-box-shadow: 0px 0px 3px 0px $main-color;
+                      box-shadow: 0px 0px 3px 0px $main-color;
             }
   
             .owl-theme .owl-nav {
@@ -617,8 +642,10 @@ $main_color: #FEC54B;
                 position: absolute;
                 top: 40%;
                 font-size: 30px;
+                -webkit-transition: .5s;
                 transition: .5s;
-                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
   
                 &:hover,
                 &:focus {
@@ -676,6 +703,7 @@ $main_color: #FEC54B;
           .quantity {
             a {
               margin: 0 10px;
+              -webkit-transition: .5s;
               transition: .5s;
   
               &:hover {
@@ -699,6 +727,7 @@ $main_color: #FEC54B;
             button {
               font-size: 14px;
               cursor: pointer;
+              -webkit-transition: .2s;
               transition: .2s;
               background: black;
               border: 0;
@@ -723,6 +752,7 @@ $main_color: #FEC54B;
               font-weight: bold;
               border-radius: 3px;
               cursor: pointer;
+              -webkit-transition: .5s;
               transition: .5s;
               border: 2px solid $main-color;
               margin-left: 5px;
@@ -731,7 +761,8 @@ $main_color: #FEC54B;
               &:focus {
                 background: none;
                 color: $main-color;
-                box-shadow: none;
+                -webkit-box-shadow: none;
+                        box-shadow: none;
                 outline: none;
               }
 
@@ -754,6 +785,7 @@ $main_color: #FEC54B;
                 padding-bottom: 11px;
                 border: none;
                 border-bottom: 2px solid #383838;
+                -webkit-transition: .5s;
                 transition: .5s;
                 font-weight: bold;
   
@@ -781,6 +813,8 @@ $main_color: #FEC54B;
   }
 
   .box-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 30px;
     padding-top: 30px;
@@ -799,6 +833,7 @@ $main_color: #FEC54B;
 
         a {
           font-weight: 600;
+          -webkit-transition: .3s;
           transition: .3s;
 
           &:hover {
@@ -835,6 +870,7 @@ $main_color: #FEC54B;
           text-transform: uppercase;
           font-weight: 600;
           font-size: 16px;
+          -webkit-transition: .3s;
           transition: .3s;
 
           &:hover {
