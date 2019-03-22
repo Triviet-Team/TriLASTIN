@@ -1,0 +1,137 @@
+extends _inc
+
+block article
+  section.bread-crumb
+    .container
+      .bc-icons
+        nav(aria-label='breadcrumb')
+          ol.breadcrumb
+            li.breadcrumb-item
+              a(href='index.html') Trang chủ
+            li.breadcrumb-item
+              a(href='san-pham.html') Sản phẩm
+            li.breadcrumb-item.active TRILASTIN-HT HYDRO-THERMAL ACCELERATOR
+
+  section.product-page
+    .container
+      .left
+        .category
+          h4 Danh mục sản phẩm
+          ul 
+            li
+              a(href='san-pham.html') Tất cả sản phẩm
+            li
+              a(href='san-pham.html') Ưu đãi giảm giá
+            li
+              a(href='san-pham.html') Kem thai sản
+            li
+              a(href='san-pham.html') Kem rạn da
+      
+      
+      .main
+        .product-detail
+          .product-detail-1
+            .row
+              .col-md-6
+                .product-detail-1-img
+                  img.main-image.xzoom(src='../img/product-1.png', xoriginal='../img/product-1.png')
+                  .xzoom-thumbs
+                    .owl-carousel.xzoom-carousel.owl-theme
+                      .item
+                        a(href='../img/product-1.png')
+                          img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                      .item
+                        a(href='../img/product-2.png')
+                          img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+                      .item
+                        a(href='../img/product-1.png')
+                          img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                      .item
+                        a(href='../img/product-2.png')
+                          img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+                      .item
+                        a(href='../img/product-1.png')
+                          img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
+                      .item
+                        a(href='../img/product-2.png')
+                          img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
+              .col-md-6
+                .product-detail-1-detail
+                  h2 TriLASTIN-HT Hydro-Thermal Accelerator
+
+                  h4.price-product
+                    | 600.000 VNĐ
+                    span 601.000 VNĐ
+                  h5
+                    | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                  .quantity
+                    span Số lượng: 
+                    button.waves-effect.waves-light -
+                    input(type='number', value='1', min='1')
+                    button.waves-effect.waves-light +
+                    button.custom-cart thêm vào giỏ
+          .product-detail-2
+            .product-detail-2-title
+              ul.nav.nav-tabs.justify-content-center(role='tablist')
+                li.nav-item
+                  a#desc-1-tab.nav-link.active(data-toggle='tab', href='#desc-1', role='tab', aria-controls='desc-1', aria-selected='true')
+                    | Tính năng sản phẩm
+                  a#desc-2-tab.nav-link(data-toggle='tab', href='#desc-2', role='tab', aria-controls='desc-2', aria-selected='true')
+                    | Thành phần chính
+                  a#desc-3-tab.nav-link(data-toggle='tab', href='#desc-3', role='tab', aria-controls='desc-3', aria-selected='true')
+                    | Hướng dẫn sử dụng
+            .tab-content
+              #desc-1.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='desc-1-tab')
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime laborum tempora iusto odio magnam optio impedit esse aperiam, reiciendis provident quas veritatis libero blanditiis minus alias illo, temporibus ut.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi delectus dolorem et, minus inventore laborum! Dolore, asperiores. Inventore, iste voluptatem quaerat repellendus illum doloribus deserunt ab totam omnis nostrum perspiciatis.
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime laborum tempora iusto odio magnam optio impedit esse aperiam, reiciendis provident quas veritatis libero blanditiis minus alias illo, temporibus ut.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi delectus dolorem et, minus inventore laborum! Dolore, asperiores. Inventore, iste voluptatem quaerat repellendus illum doloribus deserunt ab totam omnis nostrum perspiciatis.
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime laborum tempora iusto odio magnam optio impedit esse aperiam, reiciendis provident quas veritatis libero blanditiis minus alias illo, temporibus ut.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi delectus dolorem et, minus inventore laborum! Dolore, asperiores. Inventore, iste voluptatem quaerat repellendus illum doloribus deserunt ab totam omnis nostrum perspiciatis.
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime laborum tempora iusto odio magnam optio impedit esse aperiam, reiciendis provident quas veritatis libero blanditiis minus alias illo, temporibus ut.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi delectus dolorem et, minus inventore laborum! Dolore, asperiores. Inventore, iste voluptatem quaerat repellendus illum doloribus deserunt ab totam omnis nostrum perspiciatis.
+
+              #desc-2.tab-pane.fade(role='tabpanel', aria-labelledby='desc-2-tab')
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime laborum tempora iusto odio magnam optio impedit esse aperiam, reiciendis provident quas veritatis libero blanditiis minus alias illo, temporibus ut.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi delectus dolorem et, minus inventore laborum! Dolore, asperiores. Inventore, iste voluptatem quaerat repellendus illum doloribus deserunt ab totam omnis nostrum perspiciatis.
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime laborum tempora iusto odio magnam optio impedit esse aperiam, reiciendis provident quas veritatis libero blanditiis minus alias illo, temporibus ut.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi delectus dolorem et, minus inventore laborum! Dolore, asperiores. Inventore, iste voluptatem quaerat repellendus illum doloribus deserunt ab totam omnis nostrum perspiciatis.
+                img(src='../img/product-1.png') 
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime laborum tempora iusto odio magnam optio impedit esse aperiam, reiciendis provident quas veritatis libero blanditiis minus alias illo, temporibus ut.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi delectus dolorem et, minus inventore laborum! Dolore, asperiores. Inventore, iste voluptatem quaerat repellendus illum doloribus deserunt ab totam omnis nostrum perspiciatis.
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime laborum tempora iusto odio magnam optio impedit esse aperiam, reiciendis provident quas veritatis libero blanditiis minus alias illo, temporibus ut.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi delectus dolorem et, minus inventore laborum! Dolore, asperiores. Inventore, iste voluptatem quaerat repellendus illum doloribus deserunt ab totam omnis nostrum perspiciatis.
+
+              #desc-3.tab-pane.fade(role='tabpanel', aria-labelledby='desc-3-tab')
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime laborum tempora iusto odio magnam optio impedit esse aperiam, reiciendis provident quas veritatis libero blanditiis minus alias illo, temporibus ut.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi delectus dolorem et, minus inventore laborum! Dolore, asperiores. Inventore, iste voluptatem quaerat repellendus illum doloribus deserunt ab totam omnis nostrum perspiciatis.
+                img(src='../img/bg-about.png') 
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime laborum tempora iusto odio magnam optio impedit esse aperiam, reiciendis provident quas veritatis libero blanditiis minus alias illo, temporibus ut.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi delectus dolorem et, minus inventore laborum! Dolore, asperiores. Inventore, iste voluptatem quaerat repellendus illum doloribus deserunt ab totam omnis nostrum perspiciatis.
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime laborum tempora iusto odio magnam optio impedit esse aperiam, reiciendis provident quas veritatis libero blanditiis minus alias illo, temporibus ut.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi delectus dolorem et, minus inventore laborum! Dolore, asperiores. Inventore, iste voluptatem quaerat repellendus illum doloribus deserunt ab totam omnis nostrum perspiciatis.
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime laborum tempora iusto odio magnam optio impedit esse aperiam, reiciendis provident quas veritatis libero blanditiis minus alias illo, temporibus ut.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi delectus dolorem et, minus inventore laborum! Dolore, asperiores. Inventore, iste voluptatem quaerat repellendus illum doloribus deserunt ab totam omnis nostrum perspiciatis.
+
+        .similar
+          .title-page
+            h1 Sản phẩm liên quan
+
+          .box-product
+            .box-product-img 
+              a(href='chi-tiet-san-pham.html')
+                img(src='../img/product-1.png')
+            .box-product-detail
+              h3
+                a(href='chi-tiet-san-pham.html') TriLASTIN-HT Hydro-Thermal Accelerator
+              h4
+                | 600.000 VNĐ 
+                span 601.000 VNĐ
+              h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deserunt, fugiat quidem quod architecto, aperiam sed maxime aliquid exercitationem fuga maiores. Provident fugit sequi sunt optio voluptas cum nam a.
+              .box-product-detail-btn
+                a(href='chi-tiet-san-pham.html') Xem chi tiết
+          
+          .box-product
+            .box-product-img 
+              a(href='chi-tiet-san-pham.html')
+                img(src='../img/product-2.png')
+            .box-product-detail
+              h3
+                a(href='chi-tiet-san-pham.html') TriLASTIN-HT Hydro-Thermal Accelerator
+              h4
+                | 600.000 VNĐ 
+                span 601.000 VNĐ
+              h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deserunt, fugiat quidem quod architecto, aperiam sed maxime aliquid exercitationem fuga maiores. Provident fugit sequi sunt optio voluptas cum nam a.
+              .box-product-detail-btn
+                a(href='chi-tiet-san-pham.html') Xem chi tiết
+          
+          
+            
